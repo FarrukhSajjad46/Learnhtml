@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #a4d0d8
+}
+
+div {
+    font-family: Brush Script MT, cursive;
+}
+
+code {
+    border: 1px;
+}
+
+.comment {
+    color:aqua;
+}
+
+a:link {
+    text-decoration:none;
+    text-decoration-line: none;    
+}
+
+a:visited {
+    color:#00272e;
+}
+
+a:focus {
+    outline: none;
+    box-shadow:#00272e 1px 2px;
+}
+
+a:hover {
+    border: 0px 0px solid black;
+    color: #ffffff;
+    text-shadow:2px 2px 4px #0f1b1d;
+    transition: 1s;
+}
+
+a:active {
+    border: 0px 0px solid black;
+    color: rgb(2, 164, 240);
+}
+
+pre {
+    background-color: rgb(198, 255, 159);
+    border:none;
+    width:90%;
+    font-size:large
+}
+
+span {
+    background-color:slategray; border-radius: 10% 10%;
+}
+
+p {
+    padding-left: 20px
+}
