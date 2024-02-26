@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Colors</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <h1>HTML Colors</h1>
+            <p>HTML Colors define colors that we see on a web page.</p>
+            <p>In this lesson we will use inline styling with CSS  properties <span>color</span> and <span>background-color</span> to change the text color and/or background color of HTML Elements.</p>
+            <p>HTML Colors can be defined using the following:</p>
+            <ul>
+                <li><b>Color Name.</b>&nbsp;It defines any valid color by its color name e.g. <span>white, black.</span></li>
+                <li><b>Hex Color Balue.</b>&nbsp;Or Hexadecimal Color Value. It defines any valid color by a hash followed by letters and/or numbers e.g. <span>#ffffff , #000000.</span></li>
+                <li><b>RGB Color Value.</b>&nbsp; RGB stands for Red, Green, Blue. It defines any valid color by this format <span>"rgb(number, bumber, number)"</span> e.g. <span>rgb(255, 255, 255)</span>, <span>rgb(0, 0, 0)</span>.The numbers represent the intensity of the red, green and blue colors in that particular order.</li>
+            </ul>
+            <h3>Example:</h3>
+                <code>
+                    &lt;div style="background-color: black"&gt;<br />
+                    <i>&lt;!-- changing text color using a hexadecimal color value --&gt;</i><br />
+                    &lt;p syle="color: #008080;"&gt; We are Teal &lt;/p&gt;<br />
+                    &lt;p syle="color: rgb(0, 129, 238);"&gt; We are Teal &lt;/p&gt;
+                </code>
+            <label for="demo"> Chose Color</label>
+            <input type="color" id="demo" />
+            <br />
+            <button onclick="getValue()">Get Value</button>
+        </div>
+        <script type="text/javascript">
+            function getValue() {
+                alert(document.getElementById('demo').value);
+            }
+        </script>
+    </body>
+</html>

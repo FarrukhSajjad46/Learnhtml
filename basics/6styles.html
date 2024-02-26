@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+       <div>
+        <h1>HTML Styles</h1>
+        <p>Html Styles are used to style HTML elements it also means changing default values.</p>
+        <p>For instance, styling can change the default values of text color as black, background color as white, text alignment as left and text size 12 pixels.</p>
+        <h2> Internal Style Sheet &cudarrl; (internal styling)</h2>
+        <p> Using an internal style sheet is also called internal styling.</p>
+        <p>An internal style sheet is composed of one or more cascading style sheet (CSS) rule-set.</p>
+        <p>A CSS <b><em>rule-set</em></b> consists of a selector and a declaration block rurrounded by curly braces that contains one or more css declarations separated by semicolons.<span><b>&nbsp;;&nbsp;</b></span></p>
+        <p>Each declaration includes a CSS property <b><em>name</em></b> and <b><em>value</em></b>, separated by a colon.<span><b>&nbsp;:&nbsp;</b></span></p>
+        <p>They are all enclosed inside the <span><i>&lt;style&gt;</i></span> element with its <span><I>type="text/css"</I></span> attribute which is included inside the <span><i>&lt;head&gt;</i></span> element.</p>
+        <h3>Internal Style Sheet Syntax</h3>
+        <pre>
+            <code>
+                &lt;style type="text/css"&gt;
+                p {
+                    font-size: 14px;
+                }
+                &lt;/style&gt;
+            </code>
+        </pre>
+        <h2>Inline Styling Syntax</h2>
+        <p>Inline styling is used to style elements using the <span><em>style</em></span> attribute with CSS declarations inside which are similar to internal styling.</p>
+        <pre>
+            <code>
+                &lt;div&nbsp;style="property: value; property: value; property: value;"&gt;
+            </code>
+        </pre>
+        <h3>Background Color Example</h3>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                     &lt;title&gt; Try It Yourself &lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&nbsp;style="background-color: gold"&gt;
+                <i>&lt;!-- content goes here --&gt;</i>
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        <h3>Text Color Example</h3>
+            <code>
+                &lt;p&nbsp;style="color: blue"&gt;&nbsp;Color Blue&nbsp;&lt;/p&gt;
+                &lt;p&nbsp;style="color: yellow"&gt;&nbsp;Color Yellow&nbsp;&lt;/p&gt;
+                &lt;p&nbsp;style="color: green"&gt;&nbsp;Color Green&nbsp;&lt;/p&gt;
+                &lt;p&nbsp;style="color: red"&gt;&nbsp;Color Red&nbsp;&lt;/p&gt;
+                &lt;p&nbsp;style="color: pink"&gt;&nbsp;Color Pink&nbsp;&lt;/p&gt;
+            </code>
+        <h3>Text Font-Family Example</h3>
+            <code>
+                &lt;h1&gt;&nbsp;style="font-family: Times New Roman"&gt; I am a Time New Roman&lt;/h1&gt;
+            </code>
+        <h3>Text Sizing</h3>
+            <code>
+                &lt;p&nbsp;style="font-size: 3px"&gt;my size is 3 pixel.&lt;/p&gt;
+                &lt;p&nbsp;style="font-size: 45px"&gt;my size is 45 pixel.&lt;/p&gt;
+            </code>
+        <h3>Text Aligning</h3>
+            <code>
+                &lt;p&nbsp;style="font-align: left"&gt;I am aligned left.&lt;/p&gt;
+                &lt;p&nbsp;style="font-size: center"&gt;I am aligned center.&lt;/p&gt;
+                &lt;p&nbsp;style="font-size: right"&gt;I am aligned right.&lt;/p&gt;
+            </code>
+       </div>
+    </body>
+</html>

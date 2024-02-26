@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    background-image: url('/images/example123.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height to fill the viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.box {
+    width: calc(33.33% - 40px); /* Adjust width for responsiveness */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow for depth */
+}
+
+.box > div:hover {
+    scrollbar-color: teal rgb(250, 201, 209); /* Adjust scrollbar color on hover */
+}
+
+.box > div {
+    max-height: 200px; /* Set max height for scrollable content */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Adjust scrollbar width */
+    scrollbar-color: transparent transparent; /* Adjust scrollbar color */
+}
+
+.box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.box a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 0;
+}
+
+.box a:focus {
+    outline: none;
+    box-shadow: 0px 0px 20px #00272e;
+}
+
+.box a:hover {
+    border: none;
+    color: #533434;
+    text-shadow: 0px 0px 20px #00bfff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 40px); /* Adjust width for responsiveness */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 576px) {
+    .box {
+        width: calc(100% - 40px); /* Adjust width for responsiveness */
+    }
+}
+
+.top-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff; /* Adjust the color as needed */
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for style */
+    background-color: rgba(0, 0, 0, 0.8); /* Add a background color with opacity */
+    /* You can add additional styles as needed */
+}

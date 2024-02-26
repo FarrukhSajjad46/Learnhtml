@@ -1,0 +1,49 @@
+body {
+    font-family: 'Brush Script MT', cursive; /* Added font-family for paragraphs */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box h2 {
+    margin-top: 0;
+    font-family: Arial, sans-serif; /* Making headings sans-serif */
+}
+
+.red {
+    background-color: #ffcccc;
+}
+
+.blue {
+    background-color: #ccccff;
+}
+
+.green {
+    background-color: #ccffcc;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .box {
+        width: 100%;
+    }
+}
