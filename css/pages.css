@@ -1,39 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Brush Script MT', cursive; /* Added font-family for paragraphs */
+    background-color: rgb(186, 186, 231);
     margin: 0;
     padding: 0;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
+.top-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff; /* Adjust the color as needed */
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for style */
+    background-color: rgba(0, 0, 0, 0.8); /* Add a background color with opacity */
+    /* You can add additional styles as needed */
 }
 
 .box {
-    width: 30%;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+    max-width: 60%;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 1em;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.box h2 {
+.h1 {
+    text-align: left;
+    font-size: 1.2em;
     margin-top: 0;
-    font-family: Arial, sans-serif; /* Making headings sans-serif */
+}
+
+.h2 {
+    text-align:initial;
+    font-size: 1em;
+    margin-top: 0;
+}
+
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pre {
+    text-align: left; /* Reset text alignment */
+    white-space: pre-wrap; /* Preserve formatting */
+    width: 100%; /* Ensure pre element takes full width */
+    overflow-x: auto; /* Add horizontal scroll if necessary */
 }
 
 .red {
-    background-color: #ffcccc;
+    background-color: rgb(255, 204, 204);
 }
 
 .blue {
-    background-color: #ccccff;
+    background-color: rgb(204, 204, 255);
 }
 
 .green {
-    background-color: #ccffcc;
+    background-color: rgb(204, 255, 204);
 }
 
 @media (max-width: 768px) {
@@ -46,4 +77,29 @@ body {
     .box {
         width: 100%;
     }
+}
+
+/* Media Query for adjusting styles on smaller screens */
+@media screen and (max-width: 768px) {
+    .box {
+        /* Adjust width to fit smaller screens */
+        max-width: 90%;
+    }
+}
+
+
+span {
+    background-color: #ffffcc; /* Light yellow */
+    padding: 2px 4px; /* Adjust padding as needed */
+    border-radius: 3px; /* Rounded corners */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 28
 }

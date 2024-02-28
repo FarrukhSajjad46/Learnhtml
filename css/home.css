@@ -27,7 +27,8 @@ body, html {
     width: calc(33.33% - 40px); /* Adjust width for responsiveness */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity */
-    margin: 20px;
+    margin: 1%;
+    margin-top: 12.5%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow for depth */
 }
@@ -91,3 +92,4 @@ body, html {
     background-color: rgba(0, 0, 0, 0.8); /* Add a background color with opacity */
     /* You can add additional styles as needed */
 }
+
